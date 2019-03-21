@@ -1,0 +1,29 @@
+body {
+  max-width; 1280px;
+  font-family: "karla", sans-serif;
+  display: flex;
+  align-items: center;
+  background: black;
+}
+
+.img-wrapper {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.75s cubic-bezier(0.165, 0.84, 0.44, 1),
+  -webkit-transform 0.75 cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+
+.img-wrapper:hover {
+  transform: scale(0.95);
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+img {
+  width: 100%;
+  transition: transform 0.75s cubic-bezier(0.165, 0.84, 0.44, 1),
+  -webkit-transform 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
